@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MediaQuery-assignment-2</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/8a5ad3e5d8.js" crossorigin="anonymous"></script>
+    <style>
+        @media screen and (min-width:187px) and (max-width:1440px){
+            .logo{
+                display: none;
+                
+            }
+        }
+         @media screen and (max-width:186px){
+          body{
+            background-color: rgb(34, 31, 46);
+            display: block;
+            
+            
+            }
+            
+           .list{
+            display: none;
+           }
+           .nav{
+            display: flex;
+            flex-direction: column;
+           }
+           .flexbox-box1{
+            display: flex; flex-direction: column;
+           }
+           .flexbox-box2{
+            display: flex; flex-direction: column;
+           }
+          
+         }
+    </style>
+</head>
+<body>
+    <!-- start -->
+    <div class="logo"><img src="./assest/hambrger.png" width="20px" height="20px"></div>
+    <header >
+        
+        <nav class="nav">
+           
+            <div class="Head"><img src="./assest/waving-hand.png" width="20px" height="20px">
+                <p class="para1">Hi Everyone</p>
+                <h1>Mark Anderson</h1>
+                <p class="para">Developer</p>
+            </div>
+            
+            <div class="image1">
+                <img src="./assest/pc-image.png" width="210px" height="auto" >
+            </div>
+        </nav>
+            
+                <ul class="list">
+                    <li><button>Home</button></li>
+                    <li>Project</li>
+                    <li>Technologies</li>
+                    <li>Contact</li>
+                </ul>
+       
+    </header>
+    <section class="section">
+        <div class="heading">Projects</div>
+    
+       <div class="flexbox-box1">
+            <div class="pic1"><img src="./assest/image.png" width="150px" height="120px"><p class="text1">Project1</p></div>
+            <div class="pic2"><img src="./assest/image.png" width="150px" height="120px"><p class="text1">Project2</p></div>
+        </div>
+        <div class="flexbox-box2">
+            <div class="pic3"><img src="./assest/image.png" width="150px" height="120px"><p class="text1">Project3</p></div>
+            <div class="pic4"><img src="./assest/image.png" width="150px" height="120px"><p class="text1">Project4</p></div>
+        </div>
+        
+    </section>
+    <!-- footer -->
+    <footer class="foot">
+        <div class="contact">Contact Me</div>
+        <div class="icons"><i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-sharp fa-solid fa-circle-play"></i></div>
+    </footer>
+</body>
+</html>
